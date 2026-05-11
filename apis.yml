@@ -1,0 +1,84 @@
+aid: pingone
+name: PingOne
+description: >-
+  PingOne is Ping Identity's cloud-based identity and access management
+  platform providing authentication, authorization, single sign-on, MFA,
+  identity verification, risk evaluation, and user lifecycle management
+  for workforce and customer identities. The platform unifies Ping Identity
+  capabilities into a multi-region cloud service across the US, EU, Canada,
+  and Asia-Pacific. PingOne exposes a comprehensive REST Platform API
+  secured with OAuth 2.0 access tokens issued by its authentication service.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Identity
+  - Authentication
+  - Authorization
+  - Single Sign-On
+  - Multi-Factor Authentication
+  - IAM
+  - CIAM
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/pingone/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: pingone:platform-api
+    name: PingOne Platform API
+    description: >-
+      REST API for managing PingOne environments, users, populations,
+      applications, identity providers, MFA, risk policies, and
+      authentication flows. Authentication uses OAuth 2.0 access tokens
+      obtained from auth.pingone.com; the platform API base endpoint is
+      api.pingone.com.
+    humanURL: https://apidocs.pingidentity.com/pingone/main/v1/api/
+    baseURL: https://api.pingone.com
+    tags:
+      - Identity
+      - Authentication
+      - IAM
+      - OAuth 2.0
+      - REST
+    properties:
+      - type: Documentation
+        url: https://apidocs.pingidentity.com/pingone/main/v1/api/
+      - type: Postman Collection
+        url: https://www.postman.com/ping-identity/pingone/collection/xu0baxr/pingone-platform-api
+      - type: Authentication
+        url: https://auth.pingone.com
+  - aid: pingone:advanced-identity-cloud-api
+    name: PingOne Advanced Identity Cloud API
+    description: >-
+      REST API for the PingOne Advanced Identity Cloud tenant providing
+      identity management, access management, and tenant operations.
+      Supports two authentication methods - API key and secret for
+      read-only tenant operations, and OAuth 2.0 access tokens for
+      access management, identity management, and tenant write operations.
+    humanURL: https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html
+    baseURL: https://openam.example.com
+    tags:
+      - Identity
+      - Access Management
+      - IAM
+      - REST
+    properties:
+      - type: Documentation
+        url: https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html
+      - type: API Docs
+        url: https://apidocs.id.forgerock.io/
+
+common:
+  - type: Website
+    url: https://www.pingidentity.com
+  - type: Documentation
+    url: https://docs.pingidentity.com/pingone/
+  - type: Developer Portal
+    url: https://apidocs.pingidentity.com/pingone/main/v1/api/
+  - type: Pricing
+    url: https://www.pingidentity.com/en/platform/pricing.html
+  - type: Sign Up
+    url: https://www.pingidentity.com/en/try-ping.html
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
