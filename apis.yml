@@ -69,6 +69,10 @@ apis:
         url: https://apidocs.id.forgerock.io/
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/pingidentity
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ping-identity
   - type: Website
     url: https://www.pingidentity.com
   - type: Documentation
