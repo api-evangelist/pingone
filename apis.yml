@@ -43,7 +43,7 @@ apis:
     properties:
       - type: Documentation
         url: https://apidocs.pingidentity.com/pingone/main/v1/api/
-      - type: Postman Collection
+      - type: PostmanCollection
         url: https://www.postman.com/ping-identity/pingone/collection/xu0baxr/pingone-platform-api
       - type: Authentication
         url: https://auth.pingone.com
@@ -77,11 +77,11 @@ common:
     url: https://www.pingidentity.com
   - type: Documentation
     url: https://docs.pingidentity.com/pingone/
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://apidocs.pingidentity.com/pingone/main/v1/api/
   - type: Pricing
     url: https://www.pingidentity.com/en/platform/pricing.html
-  - type: SignUp
+  - type: Signup
     url: https://www.pingidentity.com/en/try-ping.html
 maintainers:
   - FN: Kin Lane
