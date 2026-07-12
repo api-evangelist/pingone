@@ -69,6 +69,14 @@ apis:
         url: https://apidocs.id.forgerock.io/
 
 common:
+  - type: TrustCenter
+    url: security/pingone-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/pingone-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/pingone-domain-security.yml
+  - type: Authentication
+    url: authentication/pingone-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/pingidentity
   - type: LinkedIn
@@ -83,6 +91,8 @@ common:
     url: https://www.pingidentity.com/en/platform/pricing.html
   - type: Signup
     url: https://www.pingidentity.com/en/try-ping.html
+  - type: Blog
+    url: https://www.pingidentity.com/en/resources/blog.html
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
