@@ -1,0 +1,21 @@
+{
+  "repo": "pingone",
+  "feeds": [
+    {
+      "source": "https://www.pingidentity.com/en/resources/blog.html",
+      "feed_url": "https://www.pingidentity.com/en/resources/blog.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.pingidentity.com/en/try-ping.html",
+      "feed_url": "https://www.pingidentity.com/en/try-ping.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 9
+}
