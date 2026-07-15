@@ -69,6 +69,8 @@ apis:
         url: https://apidocs.id.forgerock.io/
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/pingone-agentic-access.yml
   - type: TrustCenter
     url: security/pingone-trust-center.yml
   - type: VulnerabilityDisclosure
