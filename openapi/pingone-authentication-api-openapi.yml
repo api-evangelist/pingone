@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: PingOne Platform Applications Authentication API
+  description: 'PingOne is Ping Identity''s cloud-based identity and access management
+
+    platform. The Platform API manages PingOne environments, populations,
+
+    users, applications, identity providers, and authentication flows.
+
+    Authentication uses OAuth 2.0 access tokens obtained from
+
+    auth.pingone.com; the platform API base endpoint is api.pingone.com.
+
+    '
+  version: 1.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://api.pingone.com/v1
+  description: PingOne Platform API
+- url: https://auth.pingone.com
+  description: PingOne Authentication service (token endpoint)
+security:
+- bearerAuth: []
+tags:
+- name: Authentication
+  description: OAuth 2.0 token endpoints.
+paths:
+  /as/token:
+    post:
+      tags:
+      - Authentication
+      summary: Obtain OAuth 2.0 access token
+      description: Exchange client credentials for a Bearer access token.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required:
+              - grant_type
+              properties:
+                grant_type:
+                  type: string
+                  enum:
+                  - client_credentials
+                  - authorization_code
+                  - refresh_token
+                client_id:
+                  type: string
+                client_secret:
+                  type: string
+                scope:
+                  type: string
+      responses:
+        '200':
+          description: Access token issued.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+components:
+  schemas:
+    TokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+        token_type:
+          type: string
+        expires_in:
+          type: integer
+        scope:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: 'OAuth 2.0 Bearer access token issued by the PingOne authentication
+
+        service at auth.pingone.com.
+
+        '

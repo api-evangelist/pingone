@@ -1,0 +1,140 @@
+openapi: 3.1.0
+info:
+  title: PingOne Platform Applications Users API
+  description: 'PingOne is Ping Identity''s cloud-based identity and access management
+
+    platform. The Platform API manages PingOne environments, populations,
+
+    users, applications, identity providers, and authentication flows.
+
+    Authentication uses OAuth 2.0 access tokens obtained from
+
+    auth.pingone.com; the platform API base endpoint is api.pingone.com.
+
+    '
+  version: 1.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://api.pingone.com/v1
+  description: PingOne Platform API
+- url: https://auth.pingone.com
+  description: PingOne Authentication service (token endpoint)
+security:
+- bearerAuth: []
+tags:
+- name: Users
+  description: Manage end-user identities.
+paths:
+  /environments/{environmentId}/users:
+    parameters:
+    - $ref: '#/components/parameters/EnvironmentId'
+    get:
+      tags:
+      - Users
+      summary: Read users
+      responses:
+        '200':
+          description: User collection.
+    post:
+      tags:
+      - Users
+      summary: Create a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User created.
+  /environments/{environmentId}/users/{userId}:
+    parameters:
+    - $ref: '#/components/parameters/EnvironmentId'
+    - $ref: '#/components/parameters/UserId'
+    put:
+      tags:
+      - Users
+      summary: Update user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: User updated.
+  /environments/{environmentId}/users/{userId}/password:
+    parameters:
+    - $ref: '#/components/parameters/EnvironmentId'
+    - $ref: '#/components/parameters/UserId'
+    put:
+      tags:
+      - Users
+      summary: Set user password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                currentPassword:
+                  type: string
+                newPassword:
+                  type: string
+      responses:
+        '200':
+          description: Password set.
+components:
+  parameters:
+    EnvironmentId:
+      name: environmentId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: PingOne environment identifier.
+    UserId:
+      name: userId
+      in: path
+      required: true
+      schema:
+        type: string
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        name:
+          type: object
+          properties:
+            given:
+              type: string
+            family:
+              type: string
+        population:
+          type: object
+          properties:
+            id:
+              type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: 'OAuth 2.0 Bearer access token issued by the PingOne authentication
+
+        service at auth.pingone.com.
+
+        '
