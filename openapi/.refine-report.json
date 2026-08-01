@@ -1,0 +1,22 @@
+{
+  "provider": "pingone",
+  "sources": [
+    "pingone-applications-api-openapi.yml",
+    "pingone-authentication-api-openapi.yml",
+    "pingone-environments-api-openapi.yml",
+    "pingone-populations-api-openapi.yml",
+    "pingone-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "pingone-applications-api-openapi.yml",
+    "pingone-authentication-api-openapi.yml",
+    "pingone-environments-api-openapi.yml",
+    "pingone-populations-api-openapi.yml",
+    "pingone-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
