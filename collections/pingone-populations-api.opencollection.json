@@ -1,0 +1,66 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "PingOne Platform Applications Populations API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Populations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Read populations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/populations",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ]
+          },
+          "docs": "Read populations"
+        },
+        {
+          "info": {
+            "name": "Create a population",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/populations",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a population"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

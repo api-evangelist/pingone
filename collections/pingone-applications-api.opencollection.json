@@ -1,0 +1,142 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "PingOne Platform Applications API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Applications",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Read all applications",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/applications",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ]
+          },
+          "docs": "Read all applications"
+        },
+        {
+          "info": {
+            "name": "Create application",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/applications",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create application"
+        },
+        {
+          "info": {
+            "name": "Read one application",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/applications/:applicationId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              },
+              {
+                "name": "applicationId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Read one application"
+        },
+        {
+          "info": {
+            "name": "Update application",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/applications/:applicationId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              },
+              {
+                "name": "applicationId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update application"
+        },
+        {
+          "info": {
+            "name": "Delete application",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.pingone.com/v1/environments/:environmentId/applications/:applicationId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              },
+              {
+                "name": "applicationId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete application"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

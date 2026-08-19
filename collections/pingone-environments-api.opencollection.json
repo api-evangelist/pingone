@@ -1,0 +1,111 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "PingOne Platform Applications Environments API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Environments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Read all environments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pingone.com/v1/environments"
+          },
+          "docs": "Read all environments"
+        },
+        {
+          "info": {
+            "name": "Create environment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pingone.com/v1/environments",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create environment"
+        },
+        {
+          "info": {
+            "name": "Read one environment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.pingone.com/v1/environments/:environmentId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ]
+          },
+          "docs": "Read one environment"
+        },
+        {
+          "info": {
+            "name": "Update environment",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.pingone.com/v1/environments/:environmentId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update environment"
+        },
+        {
+          "info": {
+            "name": "Delete environment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.pingone.com/v1/environments/:environmentId",
+            "params": [
+              {
+                "name": "environmentId",
+                "value": "",
+                "type": "path",
+                "description": "PingOne environment identifier."
+              }
+            ]
+          },
+          "docs": "Delete environment"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
