@@ -48,6 +48,11 @@ apis:
   - Identity
   - Authentication
   - IAM
+  - REST
+  tags_raw:
+  - Identity
+  - Authentication
+  - IAM
   - OAuth 2.0
   - REST
   properties:
@@ -82,6 +87,8 @@ apis:
   humanURL: https://apidocs.pingidentity.com/pingone/main/v1/api/
   baseURL: https://api.pingone.com
   tags:
+  - Application
+  tags_raw:
   - Applications
   properties:
   - type: OpenAPI
@@ -122,6 +129,8 @@ apis:
   humanURL: https://apidocs.pingidentity.com/pingone/main/v1/api/
   baseURL: https://api.pingone.com
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
