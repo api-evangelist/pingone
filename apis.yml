@@ -9,6 +9,18 @@ description: >-
   and Asia-Pacific. PingOne exposes a comprehensive REST Platform API
   secured with OAuth 2.0 access tokens issued by its authentication service.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
