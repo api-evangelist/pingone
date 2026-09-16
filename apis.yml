@@ -1,13 +1,10 @@
 aid: pingone
 name: PingOne
-description: >-
-  PingOne is Ping Identity's cloud-based identity and access management
-  platform providing authentication, authorization, single sign-on, MFA,
-  identity verification, risk evaluation, and user lifecycle management
-  for workforce and customer identities. The platform unifies Ping Identity
-  capabilities into a multi-region cloud service across the US, EU, Canada,
-  and Asia-Pacific. PingOne exposes a comprehensive REST Platform API
-  secured with OAuth 2.0 access tokens issued by its authentication service.
+description: PingOne is Ping Identity's cloud-based identity and access management platform providing
+  authentication, authorization, single sign-on, MFA, identity verification, risk evaluation, and user
+  lifecycle management for workforce and customer identities. The platform unifies Ping Identity capabilities
+  into a multi-region cloud service across the US, EU, Canada, and Asia-Pacific. PingOne exposes a comprehensive
+  REST Platform API secured with OAuth 2.0 access tokens issued by its authentication service.
 type: Index
 deliveryModel:
   model: saas
@@ -36,25 +33,24 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pingone.png
 tags:
-  - Identity
-  - Authentication
-  - Authorization
-  - Single Sign-On
-  - Multi-Factor Authentication
-  - IAM
-  - CIAM
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/pingone/refs/heads/main/apis.yml
+- Identity
+- Authentication
+- Authorization
+- Single Sign-On
+- Multi-Factor Authentication
+- IAM
+- CIAM
+- Identity Federation
+url: https://raw.githubusercontent.com/api-evangelist/pingone/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: pingone:platform-api
   name: PingOne Platform API
-  description: >-
-    REST API for managing PingOne environments, users, populations, applications, identity providers,
-    MFA, risk policies, and authentication flows. Authentication uses OAuth 2.0 access tokens obtained
-    from auth.pingone.com; the platform API base endpoint is api.pingone.com.
+  description: REST API for managing PingOne environments, users, populations, applications, identity
+    providers, MFA, risk policies, and authentication flows. Authentication uses OAuth 2.0 access tokens
+    obtained from auth.pingone.com; the platform API base endpoint is api.pingone.com.
   humanURL: https://apidocs.pingidentity.com/pingone/main/v1/api/
   baseURL: https://api.pingone.com
   tags:
@@ -77,11 +73,10 @@ apis:
     url: https://auth.pingone.com
 - aid: pingone:advanced-identity-cloud-api
   name: PingOne Advanced Identity Cloud API
-  description: >-
-    REST API for the PingOne Advanced Identity Cloud tenant providing identity management, access management,
-    and tenant operations. Supports two authentication methods - API key and secret for read-only tenant
-    operations, and OAuth 2.0 access tokens for access management, identity management, and tenant write
-    operations.
+  description: REST API for the PingOne Advanced Identity Cloud tenant providing identity management,
+    access management, and tenant operations. Supports two authentication methods - API key and secret
+    for read-only tenant operations, and OAuth 2.0 access tokens for access management, identity management,
+    and tenant write operations.
   humanURL: https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html
   baseURL: https://openam.example.com
   tags:
@@ -149,32 +144,32 @@ apis:
   - type: OpenAPI
     url: openapi/pingone-users-api-openapi.yml
 common:
-  - type: AgenticAccess
-    url: agentic-access/pingone-agentic-access.yml
-  - type: TrustCenter
-    url: security/pingone-trust-center.yml
-  - type: VulnerabilityDisclosure
-    url: security/pingone-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/pingone-domain-security.yml
-  - type: Authentication
-    url: authentication/pingone-authentication.yml
-  - type: GitHubOrganization
-    url: https://github.com/pingidentity
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/ping-identity
-  - type: Website
-    url: https://www.pingidentity.com
-  - type: Documentation
-    url: https://docs.pingidentity.com/pingone/
-  - type: DeveloperPortal
-    url: https://apidocs.pingidentity.com/pingone/main/v1/api/
-  - type: Pricing
-    url: https://www.pingidentity.com/en/platform/pricing.html
-  - type: Signup
-    url: https://www.pingidentity.com/en/try-ping.html
-  - type: Blog
-    url: https://www.pingidentity.com/en/resources/blog.html
+- type: AgenticAccess
+  url: agentic-access/pingone-agentic-access.yml
+- type: TrustCenter
+  url: security/pingone-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/pingone-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/pingone-domain-security.yml
+- type: Authentication
+  url: authentication/pingone-authentication.yml
+- type: GitHubOrganization
+  url: https://github.com/pingidentity
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ping-identity
+- type: Website
+  url: https://www.pingidentity.com
+- type: Documentation
+  url: https://docs.pingidentity.com/pingone/
+- type: DeveloperPortal
+  url: https://apidocs.pingidentity.com/pingone/main/v1/api/
+- type: Pricing
+  url: https://www.pingidentity.com/en/platform/pricing.html
+- type: Signup
+  url: https://www.pingidentity.com/en/try-ping.html
+- type: Blog
+  url: https://www.pingidentity.com/en/resources/blog.html
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
