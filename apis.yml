@@ -36,6 +36,15 @@ tags:
 - Identity
 - Authentication
 - Authorization
+- SSO
+- Multi-Factor Authentication
+- Identity and Access Management
+- CIAM
+- Identity Federation
+tags_raw:
+- Identity
+- Authentication
+- Authorization
 - Single Sign-On
 - Multi-Factor Authentication
 - IAM
@@ -56,7 +65,7 @@ apis:
   tags:
   - Identity
   - Authentication
-  - IAM
+  - Identity and Access Management
   - REST
   tags_raw:
   - Identity
@@ -80,6 +89,11 @@ apis:
   humanURL: https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html
   baseURL: https://openam.example.com
   tags:
+  - Identity
+  - Access Management
+  - Identity and Access Management
+  - REST
+  tags_raw:
   - Identity
   - Access Management
   - IAM
@@ -117,6 +131,8 @@ apis:
   humanURL: https://apidocs.pingidentity.com/pingone/main/v1/api/
   baseURL: https://api.pingone.com
   tags:
+  - Environment
+  tags_raw:
   - Environments
   properties:
   - type: OpenAPI
