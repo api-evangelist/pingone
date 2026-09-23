@@ -1,11 +1,7 @@
 {
   "provider": "pingone",
   "sources": [
-    "pingone-applications-api-openapi.yml",
-    "pingone-authentication-api-openapi.yml",
-    "pingone-environments-api-openapi.yml",
-    "pingone-populations-api-openapi.yml",
-    "pingone-users-api-openapi.yml"
+    "_original/pingone-openapi.yml"
   ],
   "outputs": [
     "pingone-applications-api-openapi.yml",
@@ -17,6 +13,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "pingone-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "pingone-applications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pingone-authentication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pingone-environments-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pingone-populations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pingone-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
