@@ -55,14 +55,6 @@ paths:
       operationId: postEnvironmentsByEnvironmentIdPopulations
       x-operation-id-source: derived
 components:
-  parameters:
-    EnvironmentId:
-      name: environmentId
-      in: path
-      required: true
-      schema:
-        type: string
-      description: PingOne environment identifier.
   schemas:
     Population:
       type: object
@@ -73,6 +65,14 @@ components:
           type: string
         description:
           type: string
+  parameters:
+    EnvironmentId:
+      name: environmentId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: PingOne environment identifier.
   securitySchemes:
     bearerAuth:
       type: http

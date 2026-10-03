@@ -89,14 +89,6 @@ paths:
       operationId: deleteEnvironmentsByEnvironmentId
       x-operation-id-source: derived
 components:
-  parameters:
-    EnvironmentId:
-      name: environmentId
-      in: path
-      required: true
-      schema:
-        type: string
-      description: PingOne environment identifier.
   schemas:
     Environment:
       type: object
@@ -114,6 +106,14 @@ components:
           - SANDBOX
         region:
           type: string
+  parameters:
+    EnvironmentId:
+      name: environmentId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: PingOne environment identifier.
   securitySchemes:
     bearerAuth:
       type: http
