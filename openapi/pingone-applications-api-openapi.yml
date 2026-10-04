@@ -92,20 +92,6 @@ paths:
       operationId: deleteEnvironmentsByEnvironmentIdApplicationsByApplicationId
       x-operation-id-source: derived
 components:
-  parameters:
-    ApplicationId:
-      name: applicationId
-      in: path
-      required: true
-      schema:
-        type: string
-    EnvironmentId:
-      name: environmentId
-      in: path
-      required: true
-      schema:
-        type: string
-      description: PingOne environment identifier.
   schemas:
     Application:
       type: object
@@ -126,6 +112,20 @@ components:
           - WS_FED
         type:
           type: string
+  parameters:
+    EnvironmentId:
+      name: environmentId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: PingOne environment identifier.
+    ApplicationId:
+      name: applicationId
+      in: path
+      required: true
+      schema:
+        type: string
   securitySchemes:
     bearerAuth:
       type: http
