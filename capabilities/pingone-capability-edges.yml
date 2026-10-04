@@ -1,0 +1,46 @@
+slug: pingone
+provider: PingOne
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Users
+  spec_file: pingone-users-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.92
+  evidence: '"Create a user", "Update user", "Set user password"'
+  reason: Directory user lifecycle and credential operations on an IAM platform — joiners/movers/leavers
+    and password administration — squarely Identity & Access Management, not employee records.
+- tag: Applications
+  spec_file: pingone-applications-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: POST /environments/{environmentId}/applications 'Create application'; platform 'manages PingOne
+    environments, populations, users, applications, identity providers, and authentication flows'
+  reason: Applications in PingOne are the SSO/OAuth client registrations that authentication and authorisation
+    policies attach to — core Identity & Access Management administration, not software application portfolio
+    management.
+- tag: Populations
+  spec_file: pingone-populations-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: '"Read populations" / "Create a population"; "The Platform API manages PingOne environments,
+    populations, users, applications, identity providers, and authentication flows"'
+  reason: Populations are user groupings inside a PingOne environment on an identity and access management
+    platform; the operations administer identity organisational structures, which falls under Identity
+    & Access Management rather than any HR or customer capability.

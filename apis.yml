@@ -160,6 +160,9 @@ apis:
   - type: OpenAPI
     url: openapi/pingone-users-api-openapi.yml
 common:
+- type: CapabilityMap
+  url: capabilities/pingone-capability-edges.yml
+  name: PingOne Business Capability Map
 - type: AgenticAccess
   url: agentic-access/pingone-agentic-access.yml
 - type: TrustCenter
