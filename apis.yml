@@ -90,7 +90,6 @@ apis:
   baseURL: https://openam.example.com
   tags:
   - Identity
-  - Access Management
   - Identity and Access Management
   - REST
   tags_raw:
