@@ -1,4 +1,4 @@
-# PingOne (pingone)
+# PingOne
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,84 +66,111 @@
 
 PingOne is Ping Identity's cloud-based identity and access management platform providing authentication, authorization, single sign-on, MFA, identity verification, risk evaluation, and user lifecycle management for workforce and customer identities. The platform unifies Ping Identity capabilities into a multi-region cloud service across the US, EU, Canada, and Asia-Pacific. PingOne exposes a comprehensive REST Platform API secured with OAuth 2.0 access tokens issued by its authentication service.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/pingone/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/pingone/refs/heads/main/apis.yml)
+**Areas:** Identity · Authentication · Authorization · SSO · Multi-Factor Authentication · Identity and Access Management · CIAM · Identity Federation
 
-## Scope
+## PingOne on APIs.io
 
-- **Type:** Index
+Everything profiled for PingOne is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pingone/](https://apis.io/providers/pingone/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- Identity
-- Authentication
-- Authorization
-- Single Sign-On
-- Multi-Factor Authentication
-- IAM
-- CIAM
+- [PingOne Platform API](https://apis.io/apis/pingone/platform-api/) — REST API for managing PingOne environments, users, populations, applications, identity providers, MFA, risk policies, and authentication flows.…
+- [PingOne Advanced Identity Cloud API](https://apis.io/apis/pingone/advanced-identity-cloud-api/) — REST API for the PingOne Advanced Identity Cloud tenant providing identity management, access management, and tenant operations. Supports two authentication…
+- [PingOne Applications API](https://apis.io/apis/pingone/pingone-applications-api/) — Manage OIDC/SAML applications.
+- [PingOne Authentication API](https://apis.io/apis/pingone/pingone-authentication-api/) — OAuth 2.0 token endpoints.
+- [PingOne Environments API](https://apis.io/apis/pingone/pingone-environments-api/) — Manage PingOne environments.
+- [PingOne Populations API](https://apis.io/apis/pingone/pingone-populations-api/) — Manage user populations inside an environment.
+- [PingOne Users API](https://apis.io/apis/pingone/pingone-users-api/) — Manage end-user identities.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### PingOne Platform API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for managing PingOne environments, users, populations, applications, identity providers, MFA, risk policies, and authentication flows. Authentication uses OAuth 2.0 access tokens obtained from auth.pingone.com; the platform API base endpoint is api.pingone.com.
+- [Pingone Agentic Access](https://apis.io/agentic-access/pingone/pingone-agentic-access/)
 
-- **Human URL:** [https://apidocs.pingidentity.com/pingone/main/v1/api/](https://apidocs.pingidentity.com/pingone/main/v1/api/)
-- **Base URL:** `https://api.pingone.com`
+#### Collections (6)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Identity
-- Authentication
-- IAM
-- OAuth 2.0
-- REST
+- [PingOne Platform API](https://apis.io/collections/pingone/open-pingone/)
+- [PingOne Platform Applications API](https://apis.io/collections/pingone/open-pingone-applications-api/)
+- [PingOne Platform Applications Authentication API](https://apis.io/collections/pingone/open-pingone-authentication-api/)
+- [PingOne Platform Applications Environments API](https://apis.io/collections/pingone/open-pingone-environments-api/)
+- [PingOne Platform Applications Populations API](https://apis.io/collections/pingone/open-pingone-populations-api/)
+- [PingOne Platform Applications Users API](https://apis.io/collections/pingone/open-pingone-users-api/)
 
-#### Properties
+#### Security (4)
 
-- [Documentation](https://apidocs.pingidentity.com/pingone/main/v1/api/)
-- [Postman  Collection](https://www.postman.com/ping-identity/pingone/collection/xu0baxr/pingone-platform-api)
-- [Authentication](https://auth.pingone.com)
-- [Postman Collection](collections/pingone.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pingone.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### PingOne Advanced Identity Cloud API
+- [Pingone Authentication](https://apis.io/security/pingone/pingone-authentication/)
+- [Pingone Domain Security](https://apis.io/security/pingone/pingone-domain-security/)
+- [Pingone Trust Center](https://apis.io/security/pingone/pingone-trust-center/)
+- [Pingone Vulnerability Disclosure](https://apis.io/security/pingone/pingone-vulnerability-disclosure/)
 
-REST API for the PingOne Advanced Identity Cloud tenant providing identity management, access management, and tenant operations. Supports two authentication methods - API key and secret for read-only tenant operations, and OAuth 2.0 access tokens for access management, identity management, and tenant write operations.
+## Where to find this API
 
-- **Human URL:** [https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html](https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html)
-- **Base URL:** `https://openam.example.com`
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Tags
-
-- Identity
-- Access Management
-- IAM
-- REST
-
-#### Properties
-
-- [Documentation](https://developer.pingidentity.com/pingoneaic-api/_attachments/api/index.html)
-- [A P I  Docs](https://apidocs.id.forgerock.io/)
-- [Postman Collection](collections/pingone.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pingone.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/pingidentity)
-- [LinkedIn](https://www.linkedin.com/company/ping-identity)
 - [Website](https://www.pingidentity.com)
 - [Documentation](https://docs.pingidentity.com/pingone/)
-- [Developer  Portal](https://apidocs.pingidentity.com/pingone/main/v1/api/)
 - [Pricing](https://www.pingidentity.com/en/platform/pricing.html)
-- [Sign Up](https://www.pingidentity.com/en/try-ping.html)
+- [Blog](https://www.pingidentity.com/en/resources/blog.html)
+- [GitHub](https://github.com/pingidentity)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 49.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 31.6 |
+
+**Agent readiness 17.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pingone/](https://apis.io/providers/pingone/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PingOne: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pingone/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
